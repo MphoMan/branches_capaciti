@@ -1,0 +1,97 @@
+.container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.container h1 {
+   text-transform: capitalize; 
+}
+.frame{
+    height: auto;
+    width: auto;
+    border: 2px solid black;
+    background-color: black;
+    box-shadow: 15px 10px #0bd793 ;
+    /* box-shadow: 5px 10px 20px red inset; */
+    position: relative;
+}
+.picture{
+    background-image: url("./images/232346955.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+}
+.texts{
+    padding-left: 20px;
+    color: whitesmoke;
+}
+.texts h2{
+     background: linear-gradient(30deg, #00dbde,#fc00ff, #fdfdfd);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.texts button h5{
+    cursor: pointer;
+}
+.texts button h5:hover,
+.texts button h5:focus{
+    color: green;
+    display: block
+}
+.dropbtn{
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+}
+.dropup{
+    position: relative;
+    display: inline-block;
+}
+.dropup-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    /* color: whitesmoke; */
+    min-width:160px;
+    bottom: 50px;
+    box-shadow: 15px 10px #0bd793 ;
+    z-index: 1;
+}
+.dropup-content span{
+   color: whitesmoke; 
+   padding: 12px 15px;
+   display: block;
+   border-bottom: 2px solid white;
+}
+/* .dropup-content span:hover{
+    background-color: yellow;
+} */
+.dropup:hover .dropup-content{
+    display: block;
+}
+/* .dropup:over .dropbtn{
+    background-color: purple;
+} */
+.location a, .contact_us a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.location a:hover, .location:focus{
+   color:orange;
+   font-size: 20px;
+    font-weight: lighter;
+    transition: all .2s ease-in-out;
+}
+ .contact_us a:hover,
+ .contact_us a:focus{
+    background: linear-gradient(#eb3349,#f45c43, #00dbde );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: all .2s ease-in-out;
+   
+}
