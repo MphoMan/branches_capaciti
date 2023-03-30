@@ -1,3 +1,7 @@
+.main{
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
 .container{
     display: grid;
     justify-content: center;
@@ -16,11 +20,19 @@
     position: relative;
 }
 .picture{
-    background-image: url("./images/232346955.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 350px;
-    width: 350px;
+    width: 400px;
+}
+#first_logde{
+    background-image: url("./images/232346955.jpg");
+}
+#second_logde{
+    background-image: url("./images/second.jpg");
+}
+#third_logde{
+    background-image: url("./images/third.jpg");
 }
 .texts{
     padding-left: 20px;
@@ -94,4 +106,49 @@
     font-weight: lighter;
     transition: all .2s ease-in-out;
    
+}
+.read{
+    width: 360px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: black;
+    color: whitesmoke;
+}
+.read h5{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.read p{
+    line-height: 1.4;
+    text-align: justify;
+}
+.check {
+    display: none;
+}
+.inner_text{
+    display: none;
+    transition: all 0.5s linear;
+}
+.read label{
+    display: inline-block;
+    margin-top: 15px;
+    color:red;
+}
+.read label:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    border: 2px solid green;
+}
+.check:checked ~ .inner_text{
+    display: block;
+}
+.check:checked ~ label{
+    visibility: hidden;
+}
+.check:checked ~ label::after{
+    visibility: visible;
+    content: 'Show Less';
+    display: block;
+    border: 2px solid green;
+    padding-left: 2px;
 }
